@@ -15,7 +15,7 @@ class Gpio {
     void write(bool val);
     bool read();
     void toggle();
-
+    void deinit();
    private:
     int pin;
     int mode;

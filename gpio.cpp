@@ -43,3 +43,7 @@ bool Gpio::read() {
 void Gpio::toggle() {
     write(!state);
 }
+
+void Gpio::deinit() {
+    gpio_deinit(pin);
+}
